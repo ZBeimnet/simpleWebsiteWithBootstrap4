@@ -37,3 +37,8 @@ body {
 .navbar-dark {
     background-color: #512da8;
 }
+
+.reserve-color {
+    background-color: #fdc02f;
+    color:black;
+}
