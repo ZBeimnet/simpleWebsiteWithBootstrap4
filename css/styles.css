@@ -65,6 +65,12 @@ body {
     min-height: 300px;
 }
 
+#carouselButtons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
 /* .modal {
     padding-top: 60px;
     width: 600px;
