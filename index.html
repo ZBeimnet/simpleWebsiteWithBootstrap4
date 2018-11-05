@@ -38,7 +38,9 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+
+                    <!-- Task 1 - giving the login link an id -->
+                    <a id="loginLink">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -84,7 +86,6 @@
         </div>
     </div>
 
-    <!-- Start of Task 1 -->
     <div id="formModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -132,7 +133,6 @@
                             </div>
                         </div>
     
-                        <!-- Start of Task 2 -->
                         <div class="form-group row">
                             <label class="col-md-2 col-form-label">Section</label>
                             <div class="col-md-10">
@@ -146,7 +146,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End of Task 2 -->
     
                         <div class="form-group row">
                             <label for="date&time" class="col-12 col-md-2 col-form-label">Date and Time</label>
@@ -172,7 +171,6 @@
             </div>
         </div>
     </div>
-    <!-- End of Task 1 -->
 
     <header class="jumbotron">
         <div class="container">
@@ -187,11 +185,10 @@
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
 
-                    <!-- Start of Task 3 -->
-                    <button type="button" class="btn btn-block btn-warning" data-toggle="modal" data-target="#formModal">
+                    <!-- Task 1 - giving the button an id -->
+                    <button type="button" class="btn btn-block btn-warning" id="reserveTable">
                         Reserve Table
                     </button>
-                    <!-- End of Task 3 -->
                     
                     <!-- Tooltip code -->
                     <!-- <a href="#form" class="btn btn-block reserve-color" role="button"
@@ -409,30 +406,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#mycarousel").carousel({interval: 2500});
-
-            $("#carouselButton").click(function() {
-                if ($("#carouselButton").children("span").hasClass("fa-pause")) {
-                    $("#mycarousel").carousel("pause");
-                    $("#carouselButton").children("span").removeClass("fa-pause");
-                    $("#carouselButton").children("span").addClass("fa-play");
-                }
-                else {
-                    $("#mycarousel").carousel("cycle");
-                    $("#carouselButton").children("span").removeClass("fa-play");
-                    $("#carouselButton").children("span").addClass("fa-pause");
-                }
-            })
-        })
-
-    // To activate the tooltip
-    // $(document).ready(function() {
-    //     $('[data-toggle="tooltip"]').tooltip();
-    // })
-  
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
