@@ -29,7 +29,10 @@ body {
   z-index: 0; }
 
 .navbar-dark {
-  background-color: #512DA8; }
+  background-color: #512DA8; 
+  /* background-color: black;
+  color: white; */
+}
 
 .tab-content {
   border-left: 1px solid #ddd;
